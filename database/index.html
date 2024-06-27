@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="heading">Sign in your account</h1>
+        <form action="/login" class="form" id="loginForm">
+            <tr>
+                <th>
+                    <label for="email" class="label">Your email</label>
+                </th>
+                <td>
+                    <input type="email" id="email" class="input">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password" class="label">Password</label>
+                </th>
+                <td>
+                    <input type="password" id="password" class="input">
+                </td>
+            </tr>
+            <tr>
+            <button type="submit" class="button">Sign in</button>
+            </tr>
+            <div class="signup">
+                <p>Don't have an account yet? <a href="/signup">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
