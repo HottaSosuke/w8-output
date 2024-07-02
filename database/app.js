@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ローカルストレージからemailとpasswordを取得
+
     const savedEmail = localStorage.getItem('email');
     const savedPassword = localStorage.getItem('password');
 
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('loginForm').addEventListener('submit', function() {
-        // emailとpasswordをローカルストレージに保存
         localStorage.setItem('email', document.getElementById('email').value);
         localStorage.setItem('password', document.getElementById('password').value);
     });
